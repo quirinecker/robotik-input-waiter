@@ -1,0 +1,24 @@
+Grüß Gott mein Name ist Grace hopper!
+Und Ich darf sie herzlich im Resteraunt Input begrüßen. Wie kann
+ich dienen/behilflich sein? 
+
+if(!speechReco) {
+	Ich habe Sie leider nicht richtig verstanden. Aber ich nehme
+	an Sie würden gerne hier essen.[delay(5)]) Also wollen Sie gleich hier
+	essen oder für später Reservieren? 	    
+}
+
+** Reservierung **
+
+Tisch1: Ich habe Ihnen nun den Tisch 1 reserviert. Ich hoffe es macht Ihnen nichts 
+	aus, dass der Tisch am Ende des Flures auf der linken Seite liegt. [delay(5)] Na dann!   
+	Es wird mich freuen Sie später wieder zu sehen. 
+
+Tisch2: Ich habe Ihnen nun den Tisch 2 reserviert. Er liegt gleich zur meiner Rechten.
+	Sie werden sich wie zu Hause fühlen.  
+	Es wird mich freuen Sie später wieder zu sehen. 
+
+Tisch3: Ich habe Ihnen nun den Tisch 3 reserviert. Dies ist mein persönlicher 
+	lielingsplatz. Er liegt von Ihnen ausgesehen auf der rechten Seite.
+	Es wird mich freuen Sie später wieder 
+
