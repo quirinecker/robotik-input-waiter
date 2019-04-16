@@ -7066,12 +7066,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Was möchten sie zu trinken bestellen?")]]>
+		self.onStopped("Was möchtest du zu trinken bestellen?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Was möchten sie zu trinken bestellen?]]>
+                                                <![CDATA[Was möchtest du zu trinken bestellen?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
