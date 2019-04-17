@@ -14,7 +14,7 @@
     <Timeline enable="0">
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
-          <Diagram scale="59.4604">
+          <Diagram scale="84.0896">
             <Box name="Begrüßung" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="603" y="80">
               <bitmap>media/images/box/movement/move.png</bitmap>
               <script language="4">
@@ -5833,7 +5833,7 @@ class MyClass(GeneratedClass):
               <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram scale="100">
+                    <Diagram scale="118.921">
                       <Box name="toTisch" id="14" localization="8" tooltip="Go zum Desk" x="233" y="16">
                         <bitmap>media/images/box/movement/move.png</bitmap>
                         <script language="4">
@@ -11155,12 +11155,13 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Hier ist ihre Bestellung.\n\nIch hoffe es wird Ihnen schmecken")]]>
+		self.onStopped("Hier ist ihre Bestellung.\nSie können sich nun das tablett nehmen\n\nIch hoffe es wird Ihnen schmecken")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
                                                 <![CDATA[Hier ist ihre Bestellung.
+Sie können sich nun das tablett nehmen
 
 Ich hoffe es wird Ihnen schmecken]]>
                                               </text>
@@ -11845,63 +11846,6 @@ class MyClass(GeneratedClass):
                                               <BehaviorLayer name="behavior_layer1">
                                                 <BehaviorKeyframe name="keyframe1" index="1">
                                                   <Diagram>
-                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1022" y="142">
-                                                      <bitmap>media/images/box/movement/move.png</bitmap>
-                                                      <script language="4">
-                                                        <content>
-                                                          <![CDATA[]]>
-                                                        </content>
-                                                      </script>
-                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                                        <BehaviorLayer name="behavior_layer1">
-                                                          <BehaviorKeyframe name="keyframe1" index="1">
-                                                            <Diagram />
-                                                          </BehaviorKeyframe>
-                                                        </BehaviorLayer>
-                                                        <ActuatorList model="nao">
-                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-91.1" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.31" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.9" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-18" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-80.7" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="89.6" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.36" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.3" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="17.8" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="78" />
-                                                          </ActuatorCurve>
-                                                        </ActuatorList>
-                                                      </Timeline>
-                                                    </Box>
                                                     <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="529" y="143">
                                                       <bitmap>media/images/box/movement/move.png</bitmap>
                                                       <script language="4">
@@ -12245,17 +12189,74 @@ class MyClass(GeneratedClass):
                                                       </Timeline>
                                                       <Resource name="Head-sequence" type="Lock" timeout="0" />
                                                     </Box>
+                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1065" y="187">
+                                                      <bitmap>media/images/box/movement/move.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram />
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                        <ActuatorList model="nao">
+                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-44.8" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-91.2" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-12.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-78.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="44.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="89.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="12.3" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="75.8" />
+                                                          </ActuatorCurve>
+                                                        </ActuatorList>
+                                                      </Timeline>
+                                                    </Box>
                                                     <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                                     <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
-                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="10" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="8" />
                                                     <Link inputowner="4" indexofinput="3" outputowner="4" indexofoutput="9" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="1" />
                                                     <Link inputowner="1" indexofinput="2" outputowner="4" indexofoutput="9" />
+                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                   </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
@@ -13011,63 +13012,6 @@ class MyClass(GeneratedClass):
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
                                         <Diagram>
-                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="726" y="162">
-                                            <bitmap>media/images/box/movement/move.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                              <BehaviorLayer name="behavior_layer1">
-                                                <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram />
-                                                </BehaviorKeyframe>
-                                              </BehaviorLayer>
-                                              <ActuatorList model="nao">
-                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-91.1" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.31" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.9" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-18" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-80.7" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="89.6" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.36" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.3" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="17.8" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="78" />
-                                                </ActuatorCurve>
-                                              </ActuatorList>
-                                            </Timeline>
-                                          </Box>
                                           <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="233" y="163">
                                             <bitmap>media/images/box/movement/move.png</bitmap>
                                             <script language="4">
@@ -13268,12 +13212,69 @@ class MyClass(GeneratedClass):
                                             </Timeline>
                                             <Resource name="Head-sequence" type="Lock" timeout="0" />
                                           </Box>
+                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="712" y="154">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram />
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                              <ActuatorList model="nao">
+                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-44.8" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-91.2" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-12.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-78.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="44.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="89.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="12.3" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="75.8" />
+                                                </ActuatorCurve>
+                                              </ActuatorList>
+                                            </Timeline>
+                                          </Box>
                                           <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                           <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                         </Diagram>
                                       </BehaviorKeyframe>
@@ -28565,13 +28566,13 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Hier ist ihre Bestellung.\r\n\r\nIch hoffe es wird Ihnen schmecken")]]>
+		self.onStopped("Hier ist ihre Bestellung.\nSie können das Tablett nun nehmen.\nIch hoffe es wird Ihnen schmecken")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
                                                 <![CDATA[Hier ist ihre Bestellung.
-
+Sie können das Tablett nun nehmen.
 Ich hoffe es wird Ihnen schmecken]]>
                                               </text>
                                             </pluginContent>
@@ -29255,63 +29256,6 @@ class MyClass(GeneratedClass):
                                               <BehaviorLayer name="behavior_layer1">
                                                 <BehaviorKeyframe name="keyframe1" index="1">
                                                   <Diagram>
-                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1022" y="142">
-                                                      <bitmap>media/images/box/movement/move.png</bitmap>
-                                                      <script language="4">
-                                                        <content>
-                                                          <![CDATA[]]>
-                                                        </content>
-                                                      </script>
-                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                                        <BehaviorLayer name="behavior_layer1">
-                                                          <BehaviorKeyframe name="keyframe1" index="1">
-                                                            <Diagram />
-                                                          </BehaviorKeyframe>
-                                                        </BehaviorLayer>
-                                                        <ActuatorList model="nao">
-                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-91.1" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.31" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.9" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-18" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-80.7" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="89.6" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.36" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.3" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="17.8" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="78" />
-                                                          </ActuatorCurve>
-                                                        </ActuatorList>
-                                                      </Timeline>
-                                                    </Box>
                                                     <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="529" y="143">
                                                       <bitmap>media/images/box/movement/move.png</bitmap>
                                                       <script language="4">
@@ -29655,17 +29599,74 @@ class MyClass(GeneratedClass):
                                                       </Timeline>
                                                       <Resource name="Head-sequence" type="Lock" timeout="0" />
                                                     </Box>
+                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1048" y="224">
+                                                      <bitmap>media/images/box/movement/move.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram />
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                        <ActuatorList model="nao">
+                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-44.8" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-91.2" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-12.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-78.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="44.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="89.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="12.3" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="75.8" />
+                                                          </ActuatorCurve>
+                                                        </ActuatorList>
+                                                      </Timeline>
+                                                    </Box>
                                                     <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                                     <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
-                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="10" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="8" />
                                                     <Link inputowner="4" indexofinput="3" outputowner="4" indexofoutput="9" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="1" />
                                                     <Link inputowner="1" indexofinput="2" outputowner="4" indexofoutput="9" />
+                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                   </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
@@ -31394,63 +31395,6 @@ class MyClass(GeneratedClass):
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
                                         <Diagram>
-                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="726" y="162">
-                                            <bitmap>media/images/box/movement/move.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                              <BehaviorLayer name="behavior_layer1">
-                                                <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram />
-                                                </BehaviorKeyframe>
-                                              </BehaviorLayer>
-                                              <ActuatorList model="nao">
-                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-91.1" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.31" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.9" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-18" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-80.7" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="89.6" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.36" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.3" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="17.8" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="78" />
-                                                </ActuatorCurve>
-                                              </ActuatorList>
-                                            </Timeline>
-                                          </Box>
                                           <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="233" y="163">
                                             <bitmap>media/images/box/movement/move.png</bitmap>
                                             <script language="4">
@@ -31651,12 +31595,69 @@ class MyClass(GeneratedClass):
                                             </Timeline>
                                             <Resource name="Head-sequence" type="Lock" timeout="0" />
                                           </Box>
+                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="793" y="214">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram />
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                              <ActuatorList model="nao">
+                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-44.8" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-91.2" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-12.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-78.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="44.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="89.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="12.3" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="75.8" />
+                                                </ActuatorCurve>
+                                              </ActuatorList>
+                                            </Timeline>
+                                          </Box>
                                           <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                           <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                         </Diagram>
                                       </BehaviorKeyframe>
@@ -36865,13 +36866,13 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Hier ist ihre Bestellung.\r\n\r\nIch hoffe es wird Ihnen schmecken")]]>
+		self.onStopped("Hier ist ihre Bestellung.\nSie können das Tablett nun nehmen.\nIch hoffe es wird Ihnen schmecken")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
                                                 <![CDATA[Hier ist ihre Bestellung.
-
+Sie können das Tablett nun nehmen.
 Ich hoffe es wird Ihnen schmecken]]>
                                               </text>
                                             </pluginContent>
@@ -37799,63 +37800,6 @@ class MyClass(GeneratedClass):
                                               <BehaviorLayer name="behavior_layer1">
                                                 <BehaviorKeyframe name="keyframe1" index="1">
                                                   <Diagram>
-                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1022" y="142">
-                                                      <bitmap>media/images/box/movement/move.png</bitmap>
-                                                      <script language="4">
-                                                        <content>
-                                                          <![CDATA[]]>
-                                                        </content>
-                                                      </script>
-                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                                        <BehaviorLayer name="behavior_layer1">
-                                                          <BehaviorKeyframe name="keyframe1" index="1">
-                                                            <Diagram />
-                                                          </BehaviorKeyframe>
-                                                        </BehaviorLayer>
-                                                        <ActuatorList model="nao">
-                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-91.1" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.31" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.9" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="-18" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="-80.7" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="46" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="89.6" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                            <Key frame="64" value="0.36" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                            <Key frame="64" value="69.3" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                            <Key frame="64" value="17.8" />
-                                                          </ActuatorCurve>
-                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                            <Key frame="64" value="78" />
-                                                          </ActuatorCurve>
-                                                        </ActuatorList>
-                                                      </Timeline>
-                                                    </Box>
                                                     <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="529" y="143">
                                                       <bitmap>media/images/box/movement/move.png</bitmap>
                                                       <script language="4">
@@ -38199,17 +38143,74 @@ class MyClass(GeneratedClass):
                                                       </Timeline>
                                                       <Resource name="Head-sequence" type="Lock" timeout="0" />
                                                     </Box>
+                                                    <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1030" y="167">
+                                                      <bitmap>media/images/box/movement/move.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                      <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram />
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                        <ActuatorList model="nao">
+                                                          <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-44.8" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-91.2" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="-12.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="-78.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="44.7" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="89.1" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                            <Key frame="64" value="0.07" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="64" value="69.5" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="64" value="12.3" />
+                                                          </ActuatorCurve>
+                                                          <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                            <Key frame="64" value="75.8" />
+                                                          </ActuatorCurve>
+                                                        </ActuatorList>
+                                                      </Timeline>
+                                                    </Box>
                                                     <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                                     <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
-                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="10" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="4" indexofoutput="8" />
                                                     <Link inputowner="4" indexofinput="3" outputowner="4" indexofoutput="9" />
                                                     <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="1" />
                                                     <Link inputowner="1" indexofinput="2" outputowner="4" indexofoutput="9" />
+                                                    <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                                   </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
@@ -40754,63 +40755,6 @@ class MyClass(GeneratedClass):
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
                                         <Diagram>
-                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="726" y="162">
-                                            <bitmap>media/images/box/movement/move.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
-                                              <BehaviorLayer name="behavior_layer1">
-                                                <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram />
-                                                </BehaviorKeyframe>
-                                              </BehaviorLayer>
-                                              <ActuatorList model="nao">
-                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-91.1" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.31" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.9" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="-18" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="-80.7" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="46" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="89.6" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
-                                                  <Key frame="64" value="0.36" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
-                                                  <Key frame="64" value="69.3" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
-                                                  <Key frame="64" value="17.8" />
-                                                </ActuatorCurve>
-                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
-                                                  <Key frame="64" value="78" />
-                                                </ActuatorCurve>
-                                              </ActuatorList>
-                                            </Timeline>
-                                          </Box>
                                           <Box name="hände strecken" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="233" y="163">
                                             <bitmap>media/images/box/movement/move.png</bitmap>
                                             <script language="4">
@@ -41011,12 +40955,69 @@ class MyClass(GeneratedClass):
                                             </Timeline>
                                             <Resource name="Head-sequence" type="Lock" timeout="0" />
                                           </Box>
+                                          <Box name="hände schließen" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="759" y="196">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="64">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram />
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                              <ActuatorList model="nao">
+                                                <ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-44.8" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-91.2" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="-12.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="LWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="-78.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="44.7" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RElbowYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="89.1" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RHand" mute="0" unit="1">
+                                                  <Key frame="64" value="0.07" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderPitch" mute="0" unit="0">
+                                                  <Key frame="64" value="69.5" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RShoulderRoll" mute="0" unit="0">
+                                                  <Key frame="64" value="12.3" />
+                                                </ActuatorCurve>
+                                                <ActuatorCurve name="" actuator="RWristYaw" mute="0" unit="0">
+                                                  <Key frame="64" value="75.8" />
+                                                </ActuatorCurve>
+                                              </ActuatorList>
+                                            </Timeline>
+                                          </Box>
                                           <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
-                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="10" />
                                           <Link inputowner="3" indexofinput="2" outputowner="3" indexofoutput="8" />
                                           <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="9" />
                                           <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
                                         </Diagram>
                                       </BehaviorKeyframe>
