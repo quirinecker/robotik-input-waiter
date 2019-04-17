@@ -14,14 +14,14 @@
   + Dialoge optimieren
   + Dialoge an manchen Stellen hinzufügen
   + random dialogs
-- Reservieren optimieren
-  - freie Tischwahl
+- ~~-Reservieren optimieren ~~
+  - ~~-freie Tischwahl~~
 - ~~bug fixes~~
 - simplify Bestellung
-  - nur einmal Kopfberühren
-  - "Wenn sie gemütlich sitzen und entschieden haben was Sie essen wollen berühren Sie mich am Kopf"
-- restart Message
-  - Message nach einem Durchlauf sowas wie "nächster bitte"
+  - ~~nur einmal Kopfberühren
+  - ~~"Wenn sie gemütlich sitzen und entschieden haben was Sie essen wollen berühren Sie mich am Kopf"
+- ~~restart Message
+  - ~~Message nach einem Durchlauf sowas wie "nächster bitte"
 - Debug Ausgaben entfernen
 - Delays entfernen
   - alle Delays entfernen die nicht beabsichtigt waren
